@@ -21,10 +21,7 @@ public class Held {
     
     public void ersteWaffe(Waffe neueWaffe){
         Waffe [] Waffenlagerkopie  =  new Waffe [1] ;
-        for (int i = 0; i< 1; i++){
-            Waffenlagerkopie [i] = Waffenlager [i];
-        }
-        Waffenlagerkopie [1] = neueWaffe;
+        Waffenlagerkopie [0] = neueWaffe;
         Waffenlager = Waffenlagerkopie;
     }
 
@@ -40,9 +37,11 @@ public class Held {
     
     public void Waffenlager(){
         int Länge = Waffenlager.length;
+        System.out.println("Waffen:");
         for (int i = 0; i< Länge; i++){
              System.out.println(i + ": " + Waffenlager [i].getName()+ ", " + Waffenlager [i].getMaterial() + ", " + Waffenlager [i].getMagie());
         }
+        System.out.println();
     }
     
     
@@ -52,7 +51,12 @@ public class Held {
         System.out.println("WELCHE WAFFE WOLLEN SIE GNÄDIGER HERR HABEN?");
         System.out.println("(Nummer eingeben)");
         int i= input.nextInt();
-        return Waffenlager[i];
+        if(i<Waffenlager.length){
+            return Waffenlager[i];
+        }
+        else{
+            return Waffenlager[0];
+        } 
     }
     
     
@@ -76,7 +80,11 @@ public class Held {
     public void setLebenspunkte(int lebenspunkte) {
         this.lebenspunkte = lebenspunkte;
     }
+
+    public String getName() {
+        return name;
+    }
     
     
-     
+    
 }
