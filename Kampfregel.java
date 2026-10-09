@@ -53,5 +53,5 @@ public class Kampfregel extends Rollenspiel {
 
 
 
-
+ 
 }

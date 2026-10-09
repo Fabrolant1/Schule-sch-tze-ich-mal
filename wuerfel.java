@@ -15,5 +15,5 @@ public class wuerfel {
         return Ergebnis;
     }
     
-    
+     
 }

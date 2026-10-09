@@ -10,6 +10,6 @@ public class Rollenspiel {
         Waffe H = new Waffe("Holzschwert", "Plastik", 0);
         J.ersteWaffe(H);
         real.Kampfanfrage(J, L);
-        
+         
     }
 }

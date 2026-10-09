@@ -10,7 +10,7 @@ public class Waffe {
         magie = M;
     }
 
-
+ 
     public String getName() {
         return name;
     }

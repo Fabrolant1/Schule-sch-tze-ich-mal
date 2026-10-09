@@ -9,7 +9,7 @@ public class Monster {
         lebenspunkte = lp;
        
     }
-
+ 
    
     public int getAngriffswert() {
         return angriffswert;
