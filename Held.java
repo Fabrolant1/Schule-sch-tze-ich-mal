@@ -9,6 +9,7 @@ public class Held {
     private int staerke;
     private int angriffswert;
     private int lebenspunkte;
+    private int lebenspunkte_konstant;
     private Waffe [] Waffenlager;
 
     
@@ -17,8 +18,14 @@ public class Held {
         staerke=s;
         angriffswert=aw;
         lebenspunkte=lp;
+        lebenspunkte_konstant=lp;
     }
     
+    public void reset_lp(){
+        lebenspunkte=lebenspunkte_konstant;
+    }
+
+
     public void ersteWaffe(Waffe neueWaffe){
         Waffe [] Waffenlagerkopie  =  new Waffe [1] ;
         Waffenlagerkopie [0] = neueWaffe;
@@ -82,7 +89,7 @@ public class Held {
     }
 
     public String getName() {
-        return name;
+        return Kampfregel.Green + name+ Kampfregel.Black;
     }
     
     

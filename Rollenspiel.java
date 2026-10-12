@@ -17,5 +17,6 @@ public class Rollenspiel {
         J.neueWaffe(W3);
         real.Kampfanfrage(J, L);
         real.Kampfanfrage(J, L);
+        
     }
 }
