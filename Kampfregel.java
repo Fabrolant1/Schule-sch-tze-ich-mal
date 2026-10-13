@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Kampfregel extends Rollenspiel {
+public class Kampfregel{
     
     
-    private wuerfel wuerfel6;
-    private wuerfel wuerfel10;
+    
     public static final String Purple= "\u001B[35m";
     public static final String Black= "\u001B[0m";
     public static final String Green= "\u001B[32m";
@@ -12,9 +11,8 @@ public class Kampfregel extends Rollenspiel {
     public String Monster = Red+"Monster" + Black;
     public String Held = Green+"Held" +Black;
     
-    public Kampfregel(wuerfel s, wuerfel z){
-        wuerfel6  = s;
-        wuerfel10 = z;
+    public Kampfregel(){
+
     }
     
     public void Kampf(Held k1, Monster k2){
