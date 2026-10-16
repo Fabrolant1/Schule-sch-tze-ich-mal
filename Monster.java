@@ -1,4 +1,4 @@
-public class Monster {
+public class Monster extends Rollenspiel{
     
     private int angriffswert;
     private int lebenspunkte;
