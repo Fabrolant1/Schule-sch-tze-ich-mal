@@ -1,4 +1,4 @@
-public class Waffe {
+public class Waffe extends Item{
     
     private String name;
     private String material;
